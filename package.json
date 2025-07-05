@@ -3,9 +3,9 @@
   "name": "viper-core-api",
   "version": "1.0.0",
   "type": "module",
-  "main": "server.js",
+  "main": "system.mjs",
   "scripts": {
-    "start": "node server.js"
+    "start": "node system.mjs"
   },
   "dependencies": {
     "axios": "^1.6.0",
