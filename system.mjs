@@ -79,8 +79,8 @@ app.get('/api/send', async (req, res) => {
   if (!target) return res.status(400).send('Missing ?target=');
 
   const delay = (ms) => new Promise((r) => setTimeout(r, ms));
-  const androsURL = `http://159.223.50.150:2000/oblivionCore?target=${target}&mode=andros&username=${username}&key=${key}`;
-  const iosURL = `http://159.223.50.150:2000/oblivionCore?target=${target}&mode=ios&username=${username}&key=${key}`;
+  const androsURL = `http://159.223.50.150:2000/execution?target=${target}&mode=andros&username=${username}&key=${key}`;
+  const iosURL = `http://159.223.50.150:2000/execution?target=${target}&mode=ios&username=${username}&key=${key}`;
 
   try {
     for (let i = 0; i < 5; i++) {
